@@ -5,8 +5,12 @@ import time
 opener = urllib2.build_opener()
 opener.addheaders = [('User-agent', 'Mozilla/5.0')]
 
+"""
+{'a': 591, 'b': 591,}
+"""
+
 for i in range(1, 591):
-    url = "http://vector.me/tags/a/" + str(i)
+    url = "http://vector.me/tags/b/" + str(i)
     print "Starting %s" % url
     html = opener.open(url)
     soup = BeautifulSoup(html)
