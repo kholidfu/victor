@@ -16,10 +16,27 @@ pgnum = {
     'g': 446,
     'h': 458,
     'i': 373,
+    'j': 113,
+    'k': 153,
+    'l': 230,
+    'm': 230,
+    'n': 226,
+    'o': 230,
+    'p': 645,
+    'q': 22,
+    'r': 413,
+    's': 645,
+    't': 520,
+    'u': 101,
+    'v': 887,
+    'w': 22,
+    'x': 18,
+    'y': 55,
+    'z': 34
     }
 
-for i in range(1, 586):
-    url = "http://vector.me/tags/f/" + str(i)
+for i in range(1, 446):
+    url = "http://vector.me/tags/g/" + str(i)
     print "Starting %s" % url
     html = opener.open(url)
     soup = BeautifulSoup(html)
