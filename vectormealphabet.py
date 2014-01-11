@@ -6,10 +6,20 @@ opener = urllib2.build_opener()
 opener.addheaders = [('User-agent', 'Mozilla/5.0')]
 
 # number of pages on each alphabet tag
-pgnum = {'a': 591, 'b': 591, 'c': 1204, 'd': 489, 'e': 279, 'f': 586}
+pgnum = {
+    'a': 591,
+    'b': 591,
+    'c': 1204,
+    'd': 489,
+    'e': 279,
+    'f': 586,
+    'g': 446,
+    'h': 458,
+    'i': 373,
+    }
 
-for i in range(348, 489):
-    url = "http://vector.me/tags/d/" + str(i)
+for i in range(1, 586):
+    url = "http://vector.me/tags/f/" + str(i)
     print "Starting %s" % url
     html = opener.open(url)
     soup = BeautifulSoup(html)
