@@ -3,7 +3,7 @@ from cStringIO import StringIO
 import json
 
 apikey = "RutmEhKIK8vsUH8YfcVSmUSgfHzyd6Nu"
-keyword = "nude"
+keyword = "glass"
 
 url = "http://"+apikey+"@api.fotolia.com/Rest/1/search/getSearchResults?search_parameters%5Bwords%5D="+keyword+"&search_parameters%5Blanguage_id%5D=2&search_parameters%5Blimit%5D=2"
 
